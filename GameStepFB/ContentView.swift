@@ -14,10 +14,17 @@ struct ContentView: View {
   @ObservedObject var viewModel = ViewModel()
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+          Text("Coins 0")
+          Spacer()
+          Text("Total steps so far:")
+          Text("2100 Steps")
+          Spacer()
+          Text("Nov 10, 2022")
+          Text("Today")
+          Spacer()
+          Button(action: {}) {
+            Text("Play")
+          }
         }
         .padding()
     }
