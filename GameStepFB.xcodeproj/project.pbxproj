@@ -25,6 +25,10 @@
 		D605F4B6291D5B4F00F22EB0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D605F4B5291D5B4F00F22EB0 /* GoogleService-Info.plist */; };
 		D6E72116291D6D1F00EFEEF9 /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E72115291D6D1F00EFEEF9 /* HealthStore.swift */; };
 		D6E72119291D6D5F00EFEEF9 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E72118291D6D5F00EFEEF9 /* Step.swift */; };
+		D6E72124291E0A1500EFEEF9 /* StepsHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E72123291E0A1400EFEEF9 /* StepsHomeView.swift */; };
+		D6E72126291E0A3500EFEEF9 /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E72125291E0A3500EFEEF9 /* HomeTabView.swift */; };
+		D6E72128291E0A4500EFEEF9 /* HomePopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E72127291E0A4500EFEEF9 /* HomePopupView.swift */; };
+		D6E7212A291E0A5D00EFEEF9 /* GameSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E72129291E0A5D00EFEEF9 /* GameSelectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		D6E72113291D6BC100EFEEF9 /* GameStepFB.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GameStepFB.entitlements; sourceTree = "<group>"; };
 		D6E72115291D6D1F00EFEEF9 /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
 		D6E72118291D6D5F00EFEEF9 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		D6E72123291E0A1400EFEEF9 /* StepsHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsHomeView.swift; sourceTree = "<group>"; };
+		D6E72125291E0A3500EFEEF9 /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
+		D6E72127291E0A4500EFEEF9 /* HomePopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePopupView.swift; sourceTree = "<group>"; };
+		D6E72129291E0A5D00EFEEF9 /* GameSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSelectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,7 @@
 		05CCC85F290B0F4A006878D5 /* GameStepFB */ = {
 			isa = PBXGroup;
 			children = (
+				D6E72121291E09A800EFEEF9 /* Views */,
 				D6E72114291D6D0B00EFEEF9 /* HealthInfo */,
 				D6E72113291D6BC100EFEEF9 /* GameStepFB.entitlements */,
 				D605F4B5291D5B4F00F22EB0 /* GoogleService-Info.plist */,
@@ -107,6 +116,17 @@
 				D6E72118291D6D5F00EFEEF9 /* Step.swift */,
 			);
 			path = HealthInfo;
+			sourceTree = "<group>";
+		};
+		D6E72121291E09A800EFEEF9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D6E72123291E0A1400EFEEF9 /* StepsHomeView.swift */,
+				D6E72125291E0A3500EFEEF9 /* HomeTabView.swift */,
+				D6E72127291E0A4500EFEEF9 /* HomePopupView.swift */,
+				D6E72129291E0A5D00EFEEF9 /* GameSelectView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,9 +216,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				05CCC863290B0F4A006878D5 /* ContentView.swift in Sources */,
+				D6E72124291E0A1500EFEEF9 /* StepsHomeView.swift in Sources */,
+				D6E7212A291E0A5D00EFEEF9 /* GameSelectView.swift in Sources */,
 				05CCC887290B6CC7006878D5 /* ViewModel.swift in Sources */,
 				D6E72119291D6D5F00EFEEF9 /* Step.swift in Sources */,
+				D6E72126291E0A3500EFEEF9 /* HomeTabView.swift in Sources */,
 				05CCC861290B0F4A006878D5 /* GameStepFBApp.swift in Sources */,
+				D6E72128291E0A4500EFEEF9 /* HomePopupView.swift in Sources */,
 				D6E72116291D6D1F00EFEEF9 /* HealthStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
