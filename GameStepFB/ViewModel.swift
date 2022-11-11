@@ -31,20 +31,48 @@ struct User: Identifiable, Codable {
 }
 
 class ViewModel: ObservableObject {
-  private let store = Firestore.firestore()
-  @Published var user: User
-  init() {
-    self.user = User(name: "Ramsey", password: "123456", coins: 100, totalSteps: 10000)
-    add(self.user)
-  }
-  func add(_ user: User) {
-    do {
-      let newUser = user
-      _ = try store.collection("test").addDocument(from: newUser)
-      print("added to database")
-    } catch {
-      fatalError("Unable to add book: \(error.localizedDescription).")
-    }
-  }
-}
+	var healthStore: HealthStore?
+	var currentStep: Double
+	private let store = Firestore.firestore()
+	@Published var user: User
+	init() {
+		self.healthStore = HealthStore()
+		self.currentStep = 0
+		self.user = User(name: "Nick", password: "123456", coins: 200, totalSteps: 0)
+		self.updateSteps {
+			self.user.totalSteps = Int(self.currentStep)
+			print(self.user.totalSteps)
+			self.add(self.user)
+		}
+		}
+			
+			func add(_ user: User) {
+				do {
+					let newUser = user
+					_ = try store.collection("test").addDocument(data: [
+						"name": user.name, "password": user.password, "coins": "200", "totalSteps": user.totalSteps
+																														 ])
+					print("added to database")
+				} catch {
+					fatalError("Unable to add book: \(error.localizedDescription).")
+				}
+			}
+	
+	func updateSteps( closure: @escaping () -> Void){
+		if let healthStore = healthStore{
+			
+			healthStore.requestAuthorization { success in
+				if success {
+					healthStore.getSteps { unwrapp in
+						self.currentStep = unwrapp
+						print("inside " + String(self.currentStep))
+						closure()
+					}
+					print("outside " + String(self.currentStep))
+				}
+				
+			}
+		}
 
+	}
+}
