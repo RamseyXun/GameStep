@@ -22,6 +22,10 @@
 		05CCC880290B0FDE006878D5 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 05CCC87F290B0FDE006878D5 /* FirebaseFirestoreCombine-Community */; };
 		05CCC882290B0FDE006878D5 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 05CCC881290B0FDE006878D5 /* FirebaseFirestoreSwift */; };
 		05CCC887290B6CC7006878D5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CCC886290B6CC7006878D5 /* ViewModel.swift */; };
+		497FDEE9291DA9DA007F2C58 /* GameSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497FDEE8291DA9DA007F2C58 /* GameSelectView.swift */; };
+		49B1C23D291E0099008963F6 /* StepsHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1C23C291E0099008963F6 /* StepsHomeView.swift */; };
+		49B1C23F291E00C5008963F6 /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1C23E291E00C5008963F6 /* HomeTabView.swift */; };
+		49B1C241291E00E9008963F6 /* HomePopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1C240291E00E9008963F6 /* HomePopupView.swift */; };
 		49CEF9ED291D5C00003EEA9D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49CEF9EC291D5C00003EEA9D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +36,10 @@
 		05CCC864290B0F4C006878D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05CCC867290B0F4C006878D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		05CCC886290B6CC7006878D5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		497FDEE8291DA9DA007F2C58 /* GameSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSelectView.swift; sourceTree = "<group>"; };
+		49B1C23C291E0099008963F6 /* StepsHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsHomeView.swift; sourceTree = "<group>"; };
+		49B1C23E291E00C5008963F6 /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
+		49B1C240291E00E9008963F6 /* HomePopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePopupView.swift; sourceTree = "<group>"; };
 		49CEF9EC291D5C00003EEA9D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,10 +83,10 @@
 		05CCC85F290B0F4A006878D5 /* GameStepFB */ = {
 			isa = PBXGroup;
 			children = (
+				497FDEE7291DA970007F2C58 /* Views */,
+				05CCC886290B6CC7006878D5 /* ViewModel.swift */,
 				05CCC860290B0F4A006878D5 /* GameStepFBApp.swift */,
 				49CEF9EC291D5C00003EEA9D /* GoogleService-Info.plist */,
-				05CCC862290B0F4A006878D5 /* ContentView.swift */,
-				05CCC886290B6CC7006878D5 /* ViewModel.swift */,
 				05CCC864290B0F4C006878D5 /* Assets.xcassets */,
 				05CCC866290B0F4C006878D5 /* Preview Content */,
 			);
@@ -91,6 +99,18 @@
 				05CCC867290B0F4C006878D5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		497FDEE7291DA970007F2C58 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				05CCC862290B0F4A006878D5 /* ContentView.swift */,
+				497FDEE8291DA9DA007F2C58 /* GameSelectView.swift */,
+				49B1C23C291E0099008963F6 /* StepsHomeView.swift */,
+				49B1C23E291E00C5008963F6 /* HomeTabView.swift */,
+				49B1C240291E00E9008963F6 /* HomePopupView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,7 +199,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49B1C23D291E0099008963F6 /* StepsHomeView.swift in Sources */,
+				497FDEE9291DA9DA007F2C58 /* GameSelectView.swift in Sources */,
 				05CCC863290B0F4A006878D5 /* ContentView.swift in Sources */,
+				49B1C23F291E00C5008963F6 /* HomeTabView.swift in Sources */,
+				49B1C241291E00E9008963F6 /* HomePopupView.swift in Sources */,
 				05CCC887290B6CC7006878D5 /* ViewModel.swift in Sources */,
 				05CCC861290B0F4A006878D5 /* GameStepFBApp.swift in Sources */,
 			);
